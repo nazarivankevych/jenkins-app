@@ -1,8 +1,8 @@
 # jenkins-app
 
-First of all need to pull a container from docker hub:
+# First of all need to pull a container from docker hub:
 
-
+docker pull silverpunkn/myjenkins-blueocean
 
 # To run a docker containe on MacOS/Linuxr need to use this command:
 
