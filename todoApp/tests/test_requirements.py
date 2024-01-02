@@ -9,13 +9,13 @@ class TestRequirements(unittest.TestCase):
                                          "requirements.txt")
         with open(requirements_path) as f:
             requirements = f.read()
-        self.assertIn('Flask==3.2.1', requirements)
+        self.assertIn('Flask==3.0.0', requirements)
 
     def test_sqlalchemy_present(self):
         current_script_dir = os.path.dirname(os.path.abspath(__file__))
         requirements_path = os.path.join(current_script_dir, "..",
                                          "requirements.txt")
-        with open(requirements_path ) as f:
+        with open(requirements_path) as f:
             requirements = f.read()
         self.assertIn('SQLAlchemy==2.0.24', requirements)
 
@@ -23,7 +23,7 @@ class TestRequirements(unittest.TestCase):
         current_script_dir = os.path.dirname(os.path.abspath(__file__))
         requirements_path = os.path.join(current_script_dir, "..",
                                          "requirements.txt")
-        with open(requirements_path ) as f:
+        with open(requirements_path) as f:
             requirements = f.read()
         self.assertIn('Jinja2==3.1.2', requirements)
 
