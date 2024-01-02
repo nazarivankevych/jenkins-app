@@ -4,7 +4,7 @@ class TestRequirements(unittest.TestCase):
     def test_flask_present(self):
         with open('./requirements.txt') as f:
             requirements = f.read()
-        self.assertIn('Flask==3.0.0', requirements)
+        self.assertIn('Flask==3.2.1', requirements)
 
     def test_sqlalchemy_present(self):
         with open('./requirements.txt') as f:
