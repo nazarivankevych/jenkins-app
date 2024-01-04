@@ -1,0 +1,6 @@
+# directories
+venv/
+instance/
+__pycache__/
+# files
+tags
